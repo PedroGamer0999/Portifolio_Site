@@ -1,0 +1,32 @@
+.cabecario {
+  background-color: #3a2f2f;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.cabecario a {
+  text-decoration: none;
+  color: #c26d3c;
+  font-size: 18px;
+  margin-right: 16px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cabecario a:hover {
+  background-color: #292524;
+  color: #f5f5f4;
+}
+
+.login {
+  margin-left: auto;
+  border: 1px solid #3f3a37;
+  color: #c9b29b;
+}
+
+.login:hover {
+  border-color: #6b4f2a;
+  color: #f5f5f4;
+}

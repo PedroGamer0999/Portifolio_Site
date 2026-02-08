@@ -1,0 +1,73 @@
+body {
+  background-color: #1c1917;
+  color: #e7e5e4;
+  font-family: 'Merriweather', serif;
+}
+
+.login-container {
+  margin-top: 120px;
+  max-width: 360px;
+  margin: 100px auto; 
+  background-color: #292524;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Playfair Display', serif;
+  color: #f5f5f4;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;      /* espaço entre label e input */
+  margin-top: 16px;        /* espaço entre grupos */
+  font-size: 14px;
+  font-weight: 500;
+  color: #d6d3d1;
+  letter-spacing: 0.3px;
+}
+
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  height: 44px;            /* altura fixa */
+  padding: 0 12px;         /* padding horizontal */
+  border-radius: 6px;
+  border: 1px solid #57534e;
+  background-color: #1f1b18;
+  color: #e7e5e4;
+  font-size: 16px;
+  line-height: 44px;       /* centraliza o texto verticalmente */
+  box-sizing: border-box; /* evita bugs de tamanho */
+}
+
+
+.login-container input:focus {
+  border-color: #c26d3c;
+  box-shadow: 0 0 0 1px rgba(194,109,60,0.4);
+}
+
+.login-container input[type="submit"] {
+  width: 100%;
+  height: 46px;
+  margin-top: 24px;   /* 👈 espaço entre campos e botão */
+  background-color: #c26d3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.login-container input[type="submit"]:hover {
+  background-color: #e0a96d;
+}
+
