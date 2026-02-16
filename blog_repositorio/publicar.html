@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/login.css"> <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Novo Post</title>
+    <style>
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #57534e;
+            background-color: #1f1b18;
+            color: #e7e5e4;
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+        textarea:focus {
+            border-color: #c26d3c;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecario">
+        <a href="pagina-principal.html">Home</a>
+        <a class="login" href="login.html">Sair</a>
+    </div>
+
+    <div class="login-container" style="max-width: 600px;"> <h1>Novo Post</h1>
+        
+        <form action="processar_post.php" method="POST">
+            <label for="titulo">Título do Blog</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Ex: Minha nova jornada..." required>
+
+            <label for="categoria">Categoria</label>
+            <input type="text" id="categoria" name="categoria" placeholder="Ex: Tecnologia, Viagem...">
+
+            <label for="conteudo">Conteúdo</label>
+            <textarea id="conteudo" name="conteudo" placeholder="Escreva seu texto aqui..." required></textarea>
+
+            <input type="submit" value="Publicar Agora">
+        </form>
+    </div>
+</body>
+</html>

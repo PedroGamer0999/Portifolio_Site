@@ -1,0 +1,63 @@
+.cabecario {
+  position: relative; /* Importante: serve de referência para o botão central */
+  background-color: #3a2f2f;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  height: 50px; /* Definir uma altura ajuda na centralização vertical */
+}
+
+.cabecario a {
+  text-decoration: none;
+  color: #c26d3c;
+  font-size: 18px;
+  margin-right: 16px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cabecario a:hover {
+  background-color: #292524;
+  color: #f5f5f4;
+}
+
+.login {
+  margin-left: auto;
+  border: 1px solid #3f3a37;
+  color: #c9b29b;
+}
+
+.login:hover {
+  border-color: #6b4f2a;
+  color: #f5f5f4;
+}
+.btn-publicar-central {
+  position: absolute; /* Sai do fluxo e obedece ao .cabecario */
+  left: 50%;         /* Move o início do botão para a metade da largura */
+  top: 50%;          /* Move o início do botão para a metade da altura */
+  transform: translate(-50%, -50%); /* Ajusta o centro real do botão no centro do cabeçalho */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 42px;
+  height: 42px;
+  background-color: #c26d3c;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 10; /* Garante que fique por cima de outros elementos se a tela encolher */
+}
+
+.btn-publicar-central:hover {
+  background-color: #e0a96d;
+  transform: translate(-50%, -50%) scale(1.1); /* Mantém o centro e aumenta o tamanho */
+}
+
+.icon-adicionar {
+    width: 20px;
+    height: 20px;
+    /* Esse filtro deixa o ícone branco, combinando com o texto do cabeçalho */
+    filter: brightness(0) invert(1);
+}
